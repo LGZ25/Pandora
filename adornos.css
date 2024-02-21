@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+body {
+    background-color: #ffffff  ;
+    font-family: 'Anton', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-1 {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.menu {
+    position:absolute ;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+
+}
+.navbar {
+    display: flex;
+}
+.menu-1 {
+    margin-right: 180px;
+}
+.menu-2 {
+    margin-left: 180px;
+    display: flex;
+    align-items:center ;
+}
+.logo-1 {
+    width: 0px;
+
+}
+.logo-2 { 
+    width: 190px;
+    height: 90px;
+}
+.socials {
+    display: flex;
+}
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid 	#84b6f4;
+    border-radius: 50%;
+   
+}
+.social:hover {
+    
+        transform: scale(1.2);
+        transition: 0,04S;
+      
+}
+.social img {
+    margin: 8px 8px 8px 10px;
+}
+.socials    ion-icon{
+    color: 	#84b6f4;
+    font-size: 30px;
+    padding-left: 4px;
+    padding-top: 4px;
+    transition: 0.3s ease;
+}
+.socials {
+    display: flex;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+    color: 	#84b6f4;
+}
+.menu .navbar ul li a:hover {
+        transform: scale(1.1);
+        transition: 0,04S;
+    
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.trabajadores{
+    margin-top: 10%;
+    margin-left: 10%;
+    align-items: center;
+    display: flex;
+   
+}
+.trabajadores-img{
+    width: 500px;
+    height: 600px;
+    margin-left: -100px;
+    transition: transform 0,3s ease;
+}
+.trabajadores-img:hover{
+    transform: scale(1.2);
+    transition: 0,04S;
+}
+.texto{
+    margin-top: 10%;
+    margin-left: 10%;
+    align-items: center;
+    display: flex;
+   
+}
+
+.txt{
+    text-align:center;
+    margin-right: 5%;
+    color: 	#84b6f4;
+    display: flex;
+    right: 70%;
+}
+.txt h2 {
+    font-weight: 100;
+    font-size: 90px;
+    
+}
+.footer{
+    padding: 10px ;
+    display: flex;
+    justify-content: space-between;
+}
+.links h4{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.links ul li a{
+    color: 	#84b6f4;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.trabajadores-1{
+    margin-top: 50%;
+    margin: 10%;
+    margin-left: 1%;
+    display: flex ;
+    transition: transform 0,3s ease;
+}
+.trabajadores-1:hover{
+    transform: scale(1.1);
+    transition: 0,04S;
+}
+
+@media(max-width: 991px){
+    .menu {
+        padding: 20px;
+        justify-content: space-between;
+
+    }
+    .menu-2 {
+        display: none;
+    }
+    .logo-1{
+        width: 100px;
+    }
+    .logo-2 {
+        width: 0;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #09284e;
+        display: none;
+
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header-content {
+        padding-top: 30px;
+        margin-top: 100px;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+    .slider-txt{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slider-txt h1{
+        font-size: 50px;
+    }
+
+    .slider-txt p {
+        font-size: 16px;
+    }
+
+    .btn-1 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .slider-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider-img {
+        margin-right: 0px;
+        width: 300px;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets,.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction{
+        bottom: -7px;
+    }
+    
+    .tabs{
+        padding: 50px 30px;
+    }
+    .tabs label {
+        width: 33%;
+    }
+
+    .info{
+        padding: 30px;
+        flex-direction: column;
+    }
+    .info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-img{
+        width: 400px;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    .info-txt {
+        width: 100%;
+        text-align: center;
+    }
+    .info-txt h2 {
+        font-size: 50px;
+    }
+
+    .info-txt p {
+        font-size: 16px;
+    }
+
+    .btn-1 {
+        font-size: 16px;
+    }
+
+    .horario {
+        padding:30px;
+        text-align: center;
+    }
+
+    .horario-info h2 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .horario-txt {
+        flex-direction: column;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+    .social img {
+        margin: 8px 0 0 0;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+     
+    .links h4 {
+        margin: 25px 0px 10px 0px;
+    }
+   
+}  
